@@ -77,7 +77,7 @@ body {
   font-weight: 600;
   margin-bottom: 26px;
 }
-.brand-name-container{
+.brand-name-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,12 +86,69 @@ body {
   border: 1px solid rgb(170, 170, 170);
   margin: 70px 130px 100px 130px;
 }
-.brand-name-img{
+.brand-name-img {
   flex-basis: 200px;
 }
-.brand-name-img img{
+.brand-name-img img {
   width: 100%;
 }
+/* Popular section start */
+.popular-section-title {
+  text-align: center;
+  color: rgb(58, 58, 58);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.popular-card-container {
+  margin: 0px 140px 100px 140px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card-container {
+  padding: 15px 15px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card-img img {
+  width: 100%;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+.card-title {
+  color: rgb(24, 25, 31);
+  font-size: 28px;
+  font-weight: 500;
+}
+.card-price {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.card-description {
+  color: rgb(120, 120, 133);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+}
+.btn-see-more{
+  text-align:end;
+  margin: 50px 140px;
+}
+.btn-see-more a{
+  color: rgba(224, 44, 109, 0.87);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+
 
 
 
@@ -108,7 +165,7 @@ body {
   .banner-img {
     width: 100%;
   }
-  .banner-text{
+  .banner-text {
     text-align: center;
   }
   .nav-container,
@@ -120,7 +177,28 @@ body {
     flex-direction: column-reverse;
     margin: 20px 75px;
   }
+  .popular-card-container{
+    grid-template-columns: repeat(1,1fr);
+    margin: 0px 14px;
+  }
+  .btn-see-more {
+    text-align: end;
+    margin-right: 14px;
+    margin-top: 40px;
+}
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
+  .popular-card-container{
+    grid-template-columns: repeat(3,1fr);
+    margin: 0px 14px;
+  }
+  .btn-see-more {
+    text-align: end;
+    margin-right: 14px;
+    margin-top: 40px;
+}
+
+
 }
