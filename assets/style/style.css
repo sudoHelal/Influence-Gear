@@ -135,18 +135,55 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
-.btn-see-more{
-  text-align:end;
+.btn-see-more {
+  text-align: end;
   margin: 50px 140px;
 }
-.btn-see-more a{
+.btn-see-more a {
   color: rgba(224, 44, 109, 0.87);
   font-family: Poppins;
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
 }
+/* Start feature  section */
 
+.feature-product-container {
+  margin: 140px 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature-product-img {
+  width: 100%;
+}
+.feature-product-img,
+.feature-product-text {
+  width: 48%;
+}
+.join-now-btn {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  background: #000;
+  background: rgb(224, 44, 109);
+  border: 0;
+  outline: 0;
+  padding: 10px 24px;
+  width: 24%;
+}
+.feature-title {
+  color: rgb(10, 8, 38);
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.feature-description {
+  color: rgb(108, 108, 108);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
 
 
 
@@ -176,29 +213,55 @@ body {
   .banner-container {
     flex-direction: column-reverse;
     margin: 20px 75px;
+    
   }
-  .popular-card-container{
-    grid-template-columns: repeat(1,1fr);
+  .feature-product-container{
+    flex-direction: column-reverse;
+    margin: 14px 14px;
+    text-align: center;
+  }
+  .feature-product-img img{
+    width: 100%;
+  }
+  .feature-product-img, .feature-product-text {
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+.join-now-btn{
+  display: block;
+  margin: 0px auto;
+  
+}
+  .popular-card-container {
+    grid-template-columns: repeat(1, 1fr);
     margin: 0px 14px;
   }
   .btn-see-more {
     text-align: end;
     margin-right: 14px;
     margin-top: 40px;
-}
 
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .popular-card-container{
-    grid-template-columns: repeat(3,1fr);
+  .popular-card-container {
+    grid-template-columns: repeat(3, 1fr);
     margin: 0px 14px;
   }
   .btn-see-more {
     text-align: end;
     margin-right: 14px;
     margin-top: 40px;
-}
+  }
+   .feature-product-container{
+    margin: 14px 14px;
 
-
+  }
+  .join-now-btn{
+    display: block;
+    margin: 0px auto;
+    width: 30%;
+  }
 }
