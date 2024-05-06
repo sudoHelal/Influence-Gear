@@ -77,6 +77,30 @@ body {
   font-weight: 600;
   margin-bottom: 26px;
 }
+.brand-name-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 65px;
+  border: 1px solid rgb(170, 170, 170);
+  margin: 70px 130px 100px 130px;
+}
+.brand-name-img{
+  flex-basis: 200px;
+}
+.brand-name-img img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 /* Responsive for moblie device */
 @media screen and (max-width: 576px) {
